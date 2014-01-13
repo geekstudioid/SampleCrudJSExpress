@@ -1,0 +1,17 @@
+
+h1 Edit Data Mahasiswa
+   
+     
+form(method="POST", action="/siswa/#{data.nama}")
+    input(type="hidden", name="_method" , value="PUT")
+    p Nim
+      input#nim(type"text", name="nim", value="#{data.nim}")
+    p Nama
+      input#nama(type"text", name="nama", value="#{data.nama}")
+    p Email
+      input#email(type"text", name="email", value="#{data.email}")
+    p Umur
+      input#umur(type"text", name="umur", value="#{data.umur}")
+    p: button(type="submit") update
+    
+        

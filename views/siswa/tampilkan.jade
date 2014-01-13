@@ -1,0 +1,13 @@
+h1 #{data.nama}
+
+ul
+    li nim : #{data.nim}
+    li nama : #{data.nama}
+    li email : #{data.email}
+    li umur : #{data.umur}
+ ul
+    li: a(href="/siswa/#{data.nama}/edit") Edit
+    li
+        form(action='/siswa/#{data.nama}' , method='POST')
+           input(type="hidden", name="_method", value="DELETE")
+           button(type="submit") Delete

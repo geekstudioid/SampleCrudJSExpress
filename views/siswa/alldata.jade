@@ -1,0 +1,9 @@
+doctype
+h1 Semua Data Siswa
+
+ul
+   - each siswa in data
+    li
+        a(href="/siswa/#{siswa.nama}") #{siswa.nim} (#{siswa.nama})
+    
+a(href="/siswa/baru") tambah data    
